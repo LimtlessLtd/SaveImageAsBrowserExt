@@ -1,21 +1,21 @@
 chrome.contextMenus.create({
   id: "SaveImageAs",
-	title: 'Save image as >',
-	contexts: ['image']
+  title: 'Save image as >',
+  contexts: ['image']
 });
 
 chrome.contextMenus.create({
   id: "PNG",
   parentId: "SaveImageAs",
-	title: 'PNG',
-	contexts: ['image']
+  title: 'PNG',
+  contexts: ['image']
 });
 
 chrome.contextMenus.create({
   id: "JPEG",
   parentId: "SaveImageAs",
-	title: 'JPEG',
-	contexts: ['image']
+  title: 'JPEG',
+  contexts: ['image']
 });
 
 chrome.contextMenus.onClicked.addListener(function(info, tab) {
