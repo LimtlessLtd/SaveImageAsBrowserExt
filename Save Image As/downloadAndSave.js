@@ -19,16 +19,7 @@ chrome.contextMenus.create({
 });
 
 chrome.contextMenus.onClicked.addListener(function(info, tab) {
-    switch (info.menuItemId) {
-        case "JPEG":
-            saveImageAs(info, info.menuItemId.toLowerCase());
-            break;
-        case "PNG":
-            saveImageAs(info, info.menuItemId.toLowerCase());
-            break;
-        default:
-            break;
-    }
+  saveImageAs(info, info.menuItemId.toLowerCase());
 });
 
 function saveImageAs(info, type){
