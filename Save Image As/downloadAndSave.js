@@ -1,19 +1,19 @@
 chrome.contextMenus.create({
-    id: "SaveImageAs",
+  id: "SaveImageAs",
 	title: 'Save image as >',
 	contexts: ['image']
 });
 
 chrome.contextMenus.create({
-    id: "PNG",
-    parentId: "SaveImageAs",
+  id: "PNG",
+  parentId: "SaveImageAs",
 	title: 'PNG',
 	contexts: ['image']
 });
 
 chrome.contextMenus.create({
-    id: "JPEG",
-    parentId: "SaveImageAs",
+  id: "JPEG",
+  parentId: "SaveImageAs",
 	title: 'JPEG',
 	contexts: ['image']
 });
